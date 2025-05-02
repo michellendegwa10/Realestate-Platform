@@ -55,4 +55,12 @@ The JavaScript code (`script.js`) includes comments to explain the functionality
 * Add functionality to edit and delete property listings.
 * Enhance the visual design and user interface with more advanced CSS styling.
 * Implement a more dynamic "Featured Listings" section on the homepage.
-* Consider adding image uploads for properties (though this would require more complex handling beyond basic
+* Consider adding image uploads for properties (though this would require more complex handling beyond basic)
+## Contact Information
+
+For inquiries or support, feel free to reach out:
+
+* **Email:** contact@dreamhomerealty.com
+* **Phone:** +254 794899464
+* **Address:** 123 Dream Street, Real Estate Cit
+* **Website:** [DreamHome Realty](https://github.com/michellendegwa10/Realestate-Platform)
