@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Hub - Add New Property</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Real Estate Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="agents.html">Agents</a></li>
+                <li><a href="add-property.html" class="active">Add Property</a></li>
+                <li><a href="property-listings.html">Property Listings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="add-property-form">
+            <h2>Add New Property Listing</h2>
+            <form id="propertyForm">
+                <div>
+                    <label for="propertyName">Property Name:</label>
+                    <input type="text" id="propertyName" name="propertyName" required>
+                    <span class="error" id="propertyNameError"></span>
+                </div>
+                <div>
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+                    <span class="error" id="locationError"></span>
+                </div>
+                <div>
+                    <label for="price">Price (KES):</label>
+                    <input type="number" id="price" name="price" required>
+                    <span class="error" id="priceError"></span>
+                </div>
+                <div>
+                    <label for="type">Property Type:</label>
+                    <select id="type" name="type" required>
+                        <option value="">Select Type</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="land">Land</option>
+                        <option value="commercial">Commercial</option>
+                    </select>
+                    <span class="error" id="typeError"></span>
+                </div>
+                <div>
+                    <label for="bedrooms">Bedrooms:</label>
+                    <input type="number" id="bedrooms" name="bedrooms" min="0">
+                </div>
+                <div>
+                    <label for="bathrooms">Bathrooms:</label>
+                    <input type="number" id="bathrooms" name="bathrooms" min="0">
+                </div>
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="5"></textarea>
+                </div>
+                <button type="submit">Add Property</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Real Estate Hub</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

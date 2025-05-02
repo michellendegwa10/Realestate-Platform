@@ -1,0 +1,213 @@
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li, form, div, label, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav ul li a.active {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.hero .button:hover {
+    background-color: #0056b3;
+}
+
+.featured-properties h3, .property-listings h3 {
+    margin-bottom: 15px;
+}
+
+.featured-properties #featuredListings p,
+.property-listings #propertyList p,
+.property-listings-display #propertyListings p {
+    font-style: italic;
+    color: #777;
+}
+
+.property-search form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.property-search form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.property-search label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.property-search input[type="text"],
+.property-search select,
+.add-property-form input[type="text"],
+.add-property-form input[type="number"],
+.add-property-form textarea,
+.add-property-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.property-search button,
+.add-property-form button {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    grid-column: 1 / -1; /* Make the button span across columns */
+}
+
+.property-search button:hover,
+.add-property-form button:hover {
+    background-color: #4cae4c;
+}
+
+.error {
+    color: red;
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.property-listings-display ul {
+    list-style: none;
+    padding: 0;
+}
+
+.property-listings-display li {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.property-listings-display li:last-child {
+    border-bottom: none;
+}
+
+.property-listings-display h4 {
+    margin-bottom: 5px;
+}
+
+.agent-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.agent-card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .property-search form {
+        grid-template-columns: auto;
+    }
+
+    .add-property-form input[type="text"],
+    .add-property-form input[type="number"],
+    .add-property-form textarea,
+    .add-property-form select {
+        width: calc(100% - 22px);
+    }
+}
